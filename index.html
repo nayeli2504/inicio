@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ES-es">
+<head>
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"> <!--ayuda su visualizacion en dispositivos moviles, en este caso, evitar hacer zoom a la web en dispositivos moviles que podria estropear la visivilidad del sitio dandole una escala 1:1 a todo los elementos -->
+   <link rel="stylesheet" type="text/css" href="CSS/estilos.css">
+	<title>formulario</title>
+	
+</head>
+<body>
+
+<div class="Menu">
+	<ol>
+		<li> inicio</li>
+		<li>historia</li>
+		<li>actividades</li>
+		<li>festividades</li>
+	</ol>
+</div>
+<h1>historia cajamarca</h1>
+
+<p>Cajamarca fue habitada por pueblos anteriores a los incas, que organizaron una gran cultura, lo que puede apreciarse en los sitios arqueológicos de los alrededores y las muestras de arte rupestre que se pueden encontrar en diferentes sectores.
+
+Su importancia histórica comienza en 1532, donde el inca Atahualpa es capturado y luego ejecutado por Francisco Pizarro y los conquistadores españoles.
+
+Fue la primera ciudad en Perú donde se comenzó la fabricación de monedas que fueron enviadas a España.
+
+En 1821 se declaró la independencia de Perú y Cajamarca se convirtió en una de las ciudades más importantes del norte peruano. </p>
+<img src="Love-Cajamarca-Peru-7.jpg" style="float: right;">
+
+
+<h1>actividades</h1>
+
+<p>Esta ciudad cuenta con atractivos alrededores para conocer los vestigios de antiguas culturas, así como también una hermosa arquitectura colonial en su centro histórico y coloridas celebraciones.
+
+Algunos de sus edificios más emblemáticos son la Catedral, iglesia de San Francisco, Iglesia de Belén, y diversas casonas y monumentos.
+
+En Cajamarca se celebra el mejor Carnaval del Perú y se destaca por ser una de las ciudades que mejor conserva la gastronomía de los incas.
+
+Posee en su mismo centro un mirador natural en el cerro de Santa Apolonia, donde disfrutar de hermosas panorámicas de la zona. Cuenta también con el mejor centro termal de Sudamérica, los Baños del Inca, que ofrece aguas terapéuticas y excelentes servicios para el descanso y la relajación.</p>
+
+<h1>Festividades y Tradiciones </h1>
+<h2 style="color: #808000">Carnaval de Cajamarca<h2>
+<p>El Carnaval de Cajamarca es una de las festividades más significativas en esta región del Perú. Durante esta celebración, los cajamarquinos y visitantes se preparan para un mes colorido y lleno de diversión. Comparsas, patrullas y la comunidad se unen para disfrutar de bailes y música tradicional, creando un ambiente festivo único. 
+
+Las noches son mágicas, con la coronación de reinas, emocionantes bailes populares y la oportunidad de probar deliciosos platos y bebidas típicas de la región. Este Carnaval se extiende del 3 al 20 de febrero. </p>
+ <img src="ceviche.jpg" style="float: right;">
+
+<h2 style="color: #808000">Fiesta Patronal de San Isidro Labrador</h2>
+<p>El 15 de mayo marca una fecha especial en Cajamarca, cuando se celebran las fiestas patronales en honor a San Isidro Labrador, una festividad que ha sido reconocida como Patrimonio Cultural de la Nación. 
+
+Los asistentes pueden disfrutar de música en vivo, un espectáculo impresionante de fuegos artificiales y una solemne misa en honor a San Isidro Labrador. Además, uno de los momentos más destacados es la danza de los diablos, en la que la comunidad se viste con trajes típicos y remanga sus camisas y pantalones, rindiendo homenaje al arduo trabajo de los campesinos.</p>
+
+<h2 style="color: #808000">Fiesta de San Juan</h2>
+<p>El 24 de junio, en varios rincones de Cajamarca, se enciende una festividad en honor a San Juan Bautista que ilumina el cielo con fuegos artificiales y los corazones con música interpretada por bandas locales. Centenares de devotos se congregan en lugares públicos para rendir homenaje a este importante personaje de los evangelios, quien bautizó a Jesús. 
+
+La devoción y la alegría se entrelazan durante esta celebración, que puede extenderse hasta siete días. Es una oportunidad única para experimentar la fe y la cultura de Cajamarca en un ambiente de comunidad y festividad. </p>
+
+
+
+<center><h1 >Ejemplos de formularios</h1></center>
+<h1 class="especifico">Ejemplos de formularios</h1>
+<form action="#" method="POST" enctype="multipart/form-data" >  <!-- el encrtype de tipo multipar se utilaza para encriptar archivos adjuntos en el formulario -->
+	<fieldset>
+<legend>informacion basica</legend>
+
+	<label>Nombre: <input type="text" name="nombrecompleto" size="60"> </label> <br><br>
+<label class="especifico">Apellido <input type="text" name="apellidos" size="60" minlength="2" maxlength="100" pattern="[A-Za-z ]+" title="solo se permiten texto en mayusculas o minusculas" required  ></label><br><br>
+<label>Fecha de nacimiento
+	<input type="date" value="2000-01-01" min="1990-10-10" max="2030-01-01" name="nacimiento">
+</label>
+<label>DNI:	<input type="tex" name="dni" size="19" minlength="8" maxlength="8" pattern="[0-9]+" title="solo numeros ,logitud 8 caracteres" required></label>
+<br><br>
+
+<label>correo electronico:
+	<input type="email" placeholder="micorreo@gmail.com" size="50" name="correo" required>
+</label><br><br>
+
+<label>Telefono:
+	<input type="tel" name="telefono" required>
+	</label>
+
+ <label>Sexo: </label>
+<input type="radio" name="genero" value="Varón" checked>
+<label>Varòn:</label>
+<input type="radio" name="genero" value="Mujer">
+<label>Mujer:</label>
+<br> <br>
+<label>ciudad de nacimiento: 
+	     <select name="ciudades" id="ciudades">
+    <option value="cajamarca">cajamarca</option>
+    <option value="trujillo">trujillo</option>
+    <option value="lima">lima</option>
+    <option value="chiclayo">chiclayo</option>
+  </select> </label>
+<br><br>
+<label>foto:
+	<input type="file" name="txtFoto"/>
+</label>
+<label>ciudad de nacimiento: 
+	     <select name="ciudades" id="ciudades">
+    <option value="cajamarca">cajamarca</option>
+    <option value="trujillo">trujillo</option>
+    <option value="lima">lima</option>
+    <option value="chiclayo">chiclayo</option>
+  </select> </label>
+</fieldset>
+<fieldset>
+	<legend>informacion adicional</legend>
+<br>
+	<label>Idiomas:<br>
+		<input type="checkbox" name="idioma" value="español" checked>
+		<span>español</span><br>
+		<input type="checkbox" name="idioma" value="ingles">
+		<span>ingles</span><br>
+		<input type="checkbox" name="idioma" value="Aleman">
+		<span>Aleman</span><br>
+	</label>
+	<br>
+<label>
+Seleccione su curso:<br>
+<select name="curso" size="4" > <!-- se puede aplicar "multiple" y seleccionar vatias opciones usando el boton control" -->
+	<option value="Windows">Windows</option>
+	<option value="Word">Word</option>
+	<option value="Excel">Excel</option>
+	<option value="Access">Access</option>
+	<option value="Power Point">Power Point</option>
+	<option value="Flash">Flash</option>
+	<option value="Photoshop">Photoshop</option>
+</select><br><br>
+</label>
+<label>Mensaje: <br>
+<textarea name="mensaje" rows="5" cons="40" ></textarea>
+</label>
+<br><br>
+<label>contraseña:
+	<input type="password" size="15" title="Contraseña" name="password" required></label> 
+
+
+</fieldset>
+<br>
+<input type="submit" value="Enviar datos">
+
+<input type="reset" value="Borrar datos">
+
+
+
+</form>
+</body>
+<footer align="center"  style="background-color: #E4B90A"><font
+color="black"; color:black><b><center>copyright©<i>Salcedo Julcamoro Nayeli</i></b> <br><font size="5">pagina desarrollada para el curso - ofimativa IV</center> </font></font></footer>
+</html>
